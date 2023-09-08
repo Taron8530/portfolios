@@ -46,7 +46,7 @@ include 'inc_head.php';
 }
 
 #github {
-    background-image: url(files/githubicon.png);
+    background-image: url(githubicon.png);
 }
 
 #tistory {
@@ -54,7 +54,7 @@ include 'inc_head.php';
 }
     .mainbox{
       /* background-color: rgba(0, 0, 0, 0.5); */
-      background-image: url(files/75.png);
+      background-image: url(75.png);
       background-size: 100% 100%;
       color: #000000;
       font-size: 100px;
@@ -74,7 +74,7 @@ include 'inc_head.php';
     }
     .feedbackbox{
       background-color:white;
-      background-image: url("files/feedback.png");
+      background-image: url("feedback.png");
       background-size: 100% 100%;
       width: 100px;
       height:100px;
@@ -95,7 +95,7 @@ include 'inc_head.php';
       scroll-behavior: smooth;
     }
     .img{
-      background-image: url("files/icon.png");
+      background-image: url("icon.png");
       background-size: 100% 100%;
       height:150px%;
       width:150px;
@@ -201,8 +201,8 @@ include 'inc_head.php';
         <li><a href="#Skills" >Skills</a></li>
         <li><a href="#Project">Project</a></li>
         <li><a href="#">||</a></li>
-        <li><a href="files/notice_board.php" >게시판</a></li>
-        <li><a href="files/it.php">IT 동향</a></li>
+        <li><a href=" notice_board.php" >게시판</a></li>
+        <li><a href="it.php">IT 동향</a></li>
         <?php
          if($_SESSION['username']=="taron"){
            echo "<li><a href=\"adminF.php\">피드백확인</a></li>";
@@ -214,10 +214,10 @@ include 'inc_head.php';
       <ul class="nav navbar-nav navbar-right">
        <?php
        if(!$logincheck && $_COOKIE['user_id']==""){
-        echo "<li> <a  href = \"files/login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> login</a></li>";
+        echo "<li> <a  href = \"login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> login</a></li>";
       }else{
        
-        echo "<li> <a  href = \"files/logout.php\"><span class=\"glyphicon glyphicon-log-in\"></span> logout</a></li>";
+        echo "<li> <a  href = \"logout.php\"><span class=\"glyphicon glyphicon-log-in\"></span> logout</a></li>";
       } 
        ?>      
         <!-- echo "<li> <a style = "visibility:hidden" href = "login.php"><span class="glyphicon glyphicon-log-in"></span> admin</a></li>" -->
@@ -294,7 +294,7 @@ include 'inc_head.php';
 </div>
 <br><br>
 <br>
-  <button class="feedbackbox" onclick="location.href='files/feedback.php'"></button>
+  <button class="feedbackbox" onclick="location.href='feedback.php'"></button>
 <br>
 <br>
 <div class = "jumbotron" style="background-color:#4641D9" id ="Skills">
