@@ -203,39 +203,13 @@ include 'inc_head.php';
         <li><a href="#">||</a></li>
         <li><a href=" notice_board.php" >게시판</a></li>
         <li><a href="it.php">IT 동향</a></li>
-        <?php
-         if($_SESSION['username']=="taron"){
-           echo "<li><a href=\"adminF.php\">피드백확인</a></li>";
-         }else{
-          echo "<li><a href=\"adminF.php\" style =\"visibility:hidden;\">피드백확인</a></li>";
-         }
-         ?>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-       <?php
-       if(!$logincheck && $_COOKIE['user_id']==""){
-        echo "<li> <a  href = \"login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> login</a></li>";
-      }else{
-       
-        echo "<li> <a  href = \"logout.php\"><span class=\"glyphicon glyphicon-log-in\"></span> logout</a></li>";
-      } 
-       ?>      
-        <!-- echo "<li> <a style = "visibility:hidden" href = "login.php"><span class="glyphicon glyphicon-log-in"></span> admin</a></li>" -->
     
   <!-- span class="glyphicon glyphicon-log-in"></span> -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <div id = "id"></div>
-        <?php
-        $name;
-          if($_COOKIE["user_id"!=""] || $_SESSION["username"]){
-            echo "<li><a>ID:".$_SESSION['username']."</a></li>";
-          }
-          if($_COOKIE["user_id"!=""]){
-          $name = $_COOKIE["user_id"];
-        }else{
-          $name =  $_SESSION["username"]; 
-        }?>
       </ul>
     </div>
   </div>
